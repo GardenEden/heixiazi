@@ -5,14 +5,6 @@
     <link rel="shortcut icon" href="./assets/images/favicon.png">
     <meta charset="UTF-8">
     <title>黑匣子 - 书签导航</title>
-    <script>
-    if (navigator.appName == "Netscape") {
-        var language = navigator.language;
-    } else {
-        var language = navigator.browserLanguage;
-
-    }
-    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +12,23 @@
     <title>黑匣子 - 书签导航</title>
     <meta name="keywords" content="黑匣子书签导航,heixiazi">
     <meta name="description" content="heixiazi - 黑匣子书签导航">
-    
+    <script>
+    if (navigator.appName == "Netscape") {
+        var language = navigator.language;
+    } else {
+        var language = navigator.browserLanguage;
+
+    }
+
+    if (language.indexOf("en") > -1) {
+        document.location.href = "cn/index.html";
+    } else if (language.indexOf("zh") > -1) {
+        document.location.href = "cn/index.html";
+    } else {
+        document.location.href = "cn/index.html";
+
+    }
+    </script>
     <!-- / FB Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://gardeneden.github.io/heixiazi/">
